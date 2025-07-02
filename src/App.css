@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;}
+
+.cocktail-data {
+  margin-top: 8%;;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.cocktail-data li {
+  list-style-type: none;
+}
+.drinkimg{
+ 
+
+}
+.cocktail-data li img{
+  width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+  object-fit: cover;
+  border:1px solid rgb(0,0,0,0.3);
+  box-shadow: 0px 0px 3px 2px black;
+}
+.text{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 50;
+  font-family:cursive;
+  text-transform: capitalize;
+  font-size: 15px;
+  color:rgb(0,0,0);
+
+
+
+}
+
+#search{
+  width: 30%;
+  height:25px;
+  text-align: center;
+  font-weight: bold;
+  font-family:cursive;
+  text-transform: capitalize;
+  font-size: 10px;
+  color:rgb(0,0,0,0.3);
+  margin-top:3%;
+  
+
+}
+#search:focus{
+  /* outline: none; */
+  border-color: #a9a9a9;
+  border-radius: 5px;
+}
+@media screen and (min-width:760px){
+  .cocktail-data{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  #search{
+    font-size: 20px;
+  }
+  .text{
+    font-size: 20px;
+  }
+}
